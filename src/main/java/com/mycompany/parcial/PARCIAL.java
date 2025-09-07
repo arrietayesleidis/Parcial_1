@@ -15,7 +15,7 @@ public class PARCIAL {
     public static void main(String[] args) {
         java.awt.EventQueue.invokeLater(new Runnable() {
         public void run() {
-            new Jlogin().setVisible(true); // Cambiar a login
+            new Jlogin().setVisible(true); 
         }
     });
     }

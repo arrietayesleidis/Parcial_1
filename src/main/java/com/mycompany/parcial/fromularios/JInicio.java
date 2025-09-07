@@ -39,7 +39,7 @@ public class JInicio extends javax.swing.JFrame {
     for (clientes usuario : c.getListaUsuarios()) {
         modelo.addRow(new Object[]{
             usuario.getNombre(),
-            usuario.getApellido()
+            usuario.getApellido(),
         });
     }
     

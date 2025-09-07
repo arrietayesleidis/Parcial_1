@@ -13,7 +13,7 @@ import java.util.Objects;
  * @author User
  */
 public class clientes {
-    private static String nombre;
+    private String nombre;
     private String apellido;
     private String email;
     private String nickname;
@@ -75,13 +75,12 @@ public class clientes {
     
     public static void agguser(String c, String apellido1, String email1, String nickname1, String contraseña){
         clientes nuevoUsuario = new clientes();
-        nuevoUsuario.setNombre(nombre);
+        nuevoUsuario.setNombre(c);
         nuevoUsuario.setApellido(apellido1);
         nuevoUsuario.setEmail(email1);
         nuevoUsuario.setNickname(nickname1);
         nuevoUsuario.setClave(contraseña);
-    
-    usuarios.add(nuevoUsuario);
+        usuarios.add(nuevoUsuario);
     
     }
     public static boolean verificarLogin(String usuario, String contraseña) {
